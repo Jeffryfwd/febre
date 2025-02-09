@@ -7,9 +7,10 @@
 }
 
 .Content_text {
-  margin-left: 540px;
+  margin-left: 500px;
   margin-top: 100px;
   position: absolute;
+  color: #f7f7f7f7;
 }
 
 .Botones {
@@ -48,14 +49,14 @@ button:focus {
 
 .Otra_vez {
   position: absolute;
-  left: 145px;
-  margin-top: 150px;
+  left: 220px;
+  margin-top: 210px;
 }
 
 .Image_rafa {
   position: absolute;
   margin-top: px;
-  left: 150px;
+  left: 200px;
 }
 
 /* Media Queries para dispositivos móviles */
@@ -116,12 +117,12 @@ button:focus {
   .custom-image {
     width: 100px;
     height: 100px;
-    margin-left: 40px;
+    margin-left: 10px;
   }
 
   .Otra_vez {
-    left: 140px;
-    margin-top: 160px;
+    left: 160px;
+    margin-top: 260px;
   }
 
   .Image_rafa {
@@ -133,5 +134,39 @@ button:focus {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
+  .gracias{
+    margin-left: -88px;
+  }
+  
+  .Image_rafa2{
+    margin-top: 110px;
+    position: absolute;
+    left: -90px;
+    
+  }
+  img{
+    border-radius: 10px;
+    
+  }
+  #rafas{
+    height: 200px;
+    width: 200px;
+  }
+}
+.gracias{
+  margin-left: -88px;
 }
 
+.Image_rafa2{
+  margin-top: 140px;
+  margin-left: 189px;
+  
+}
+img{
+  border-radius: 10px;
+  
+}
+#rafas{
+  height: 200px;
+  width: 200px;
+}

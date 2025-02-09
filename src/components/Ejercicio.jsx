@@ -5,6 +5,8 @@ import RAFA3 from '../Img/RAFA3.jpg';
 import rafa4 from '../Img/rafa4.jpg';
 import rafa5 from '../Img/rafa5.gif';
 
+
+
 const ValentineInvite = () => {
   const [response, setResponse] = useState(null);
   const [noClickCount, setNoClickCount] = useState(0);
@@ -26,7 +28,9 @@ const ValentineInvite = () => {
   const Img_rafa = [rafa, rafa2, RAFA3, rafa4, rafa5];
 
   return (
+
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-pink-200 to-pink-400 p-4">
+      
       <div className="p-6 shadow-2xl rounded-2xl bg-white text-center max-w-sm w-full sm:max-w-md lg:max-w-lg">
         {response === null && (
           <>
@@ -34,6 +38,10 @@ const ValentineInvite = () => {
           <h1 className="text-3xl font-extrabold text-pink-600 mb-6 animate-bounce" >
               💕 ¿Quieres ser mi 14 de febrero? 💕
             </h1>
+            <div className='Image_rafa2'>
+            <img  src={rafa5} alt="" />
+            </div>
+            
           </div>
             <div className='Botones'>
             <div className="flex justify-center space-x-4">
@@ -54,9 +62,11 @@ const ValentineInvite = () => {
         )}
         <div className='Content_text'>
         {response === 'yes' && (
+         <div className='gracias'>
           <h2 className="text-2xl text-green-600 mt-6 font-semibold animate-pulse">
             😍✨ ¡Gracias por aceptar! Va a ser el mejor 14 de febrero 💕✨
           </h2>
+          </div>
         )}
 
         {response === 'no' && (
@@ -69,6 +79,7 @@ const ValentineInvite = () => {
               src={Img_rafa[noClickCount % Img_rafa.length]} 
               alt="Triste" 
               className="custom-image mx-auto mt-4"
+              id='rafas'
             />
             </div>
            
@@ -85,6 +96,7 @@ const ValentineInvite = () => {
         </div>
        
       </div>
+   
     </div>
   );
 };
