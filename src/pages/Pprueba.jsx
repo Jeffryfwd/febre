@@ -4,7 +4,7 @@ function Pprueba() {
   return (
     <div>
    
-     <BubbleSoundComponent/>
+  
     </div>
   )
 }
